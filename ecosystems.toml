@@ -1,0 +1,143 @@
+# Hydra Nexus - Ecosystems Configuration
+# Définit tous les écosystèmes gérés par Nexus
+
+[[ecosystem]]
+name = "Hydra"
+path = "/home/antonin/app/projects/Hydra-ecosystem/hydra"
+folder_name = "hydra"  # Nom réel du dossier pour le matching
+docker_compose = "docker-compose.full.yml"
+docker_compose_fallback = "docker-compose.yml"
+icon = "🐉"
+color = "#00D9FF"
+auto_open_browser = true
+browser_profile = "Profile 1"  # Profil Chrome "Antonin"
+
+# Environnements Hydra
+[ecosystem.environments.dev]
+browser_url = "http://hydra.local"
+docker_compose = "docker-compose.full.yml"
+
+[ecosystem.environments.prod]
+browser_url = "https://hydra.nyxia.fr"
+docker_compose = "docker-compose.prod.yml"
+
+# Services Docker de Hydra
+[[ecosystem.services]]
+name = "Redis"
+port = 31379
+icon = "🔴"
+type = "docker"
+health_check = "tcp"
+
+[[ecosystem.services]]
+name = "Qdrant"
+port = 31333
+icon = "🟣"
+type = "docker"
+health_check = "http"
+health_path = "/healthz"
+
+[[ecosystem.services]]
+name = "Neo4j"
+port = 31474
+icon = "🟢"
+type = "docker"
+health_check = "tcp"
+
+[[ecosystem.services]]
+name = "LiteLLM"
+port = 31300
+icon = "🤖"
+type = "docker"
+health_check = "http"
+health_path = "/health"
+
+[[ecosystem.services]]
+name = "Prometheus"
+port = 31990
+icon = "📊"
+type = "docker"
+health_check = "http"
+health_path = "/-/healthy"
+
+[[ecosystem.services]]
+name = "Grafana"
+port = 31900
+icon = "📈"
+type = "docker"
+health_check = "http"
+health_path = "/api/health"
+
+# Applications Hydra
+[[ecosystem.services]]
+name = "Backend"
+port = 31100
+icon = "⚙️"
+type = "app"
+command = ["pnpm", "dev"]
+cwd = "."
+health_check = "http"
+health_path = "/api/health"
+
+[[ecosystem.services]]
+name = "Frontend"
+port = 31173
+icon = "🎨"
+type = "app"
+command = ["pnpm", "dev"]
+cwd = "frontend"
+health_check = "http"
+health_path = "/"
+
+# ============================================================
+# NYXIA ECOSYSTEM
+# ============================================================
+
+[[ecosystem]]
+name = "Nyxia"
+path = "/home/antonin/app/projects/hack"
+docker_compose = "docker-compose.yml"
+icon = "🌙"
+color = "#9D4EDD"
+
+# Services Nyxia (à définir selon l'architecture réelle)
+[[ecosystem.services]]
+name = "Backend"
+port = 32100
+icon = "⚡"
+type = "app"
+command = ["pnpm", "dev"]
+cwd = "."
+health_check = "http"
+health_path = "/health"
+
+[[ecosystem.services]]
+name = "Frontend"
+port = 32173
+icon = "🎨"
+type = "app"
+command = ["pnpm", "dev"]
+cwd = "frontend"
+health_check = "http"
+health_path = "/"
+
+# ============================================================
+# TEMPLATE POUR NOUVEAUX ÉCOSYSTÈMES
+# ============================================================
+
+# [[ecosystem]]
+# name = "MonProjet"
+# path = "/chemin/absolu/vers/projet"
+# docker_compose = "docker-compose.yml"
+# icon = "🚀"
+# color = "#FF6B6B"
+#
+# [[ecosystem.services]]
+# name = "ServiceName"
+# port = 33000
+# icon = "🔧"
+# type = "docker"  # ou "app"
+# health_check = "http"  # ou "tcp"
+# health_path = "/health"  # requis si health_check = "http"
+# command = ["pnpm", "dev"]  # requis si type = "app"
+# cwd = "."  # requis si type = "app"
