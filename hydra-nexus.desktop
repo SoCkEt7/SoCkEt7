@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Hydra Nexus
+Comment=Multi-Ecosystem Manager for Hydra
+Exec=/home/antonin/app/projects/Hydra-ecosystem/hydra-nexus/target/release/nexus-v2
+Icon=/home/antonin/app/projects/Hydra-ecosystem/hydra-nexus/assets/hydra-logo.png
+Terminal=false
+Type=Application
+Categories=Development;
+Actions=StartHydra;
+
+[Desktop Action StartHydra]
+Name=Start Hydra Stack
+Exec=x-terminal-emulator -e /home/antonin/app/projects/Hydra-ecosystem/hydra-nexus/hydra-cli/target/release/hydra-cli dev
