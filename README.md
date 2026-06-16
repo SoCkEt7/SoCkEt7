@@ -1,15 +1,26 @@
 <div align="center">
 
-# ⚡ SoCkEt7
+# Antonin Nvh
 **CTO × AI Security Architect | Critical Infrastructure | 18y R&D**
 
 [![Participation](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Participation&query=$.total_contributions&url=https://github-contributions-api.deno.dev/SoCkEt7.json&color=000000&labelColor=111111)](https://github.com/SoCkEt7)
-[![Followers](https://img.shields.io/github/followers/SoCkEt7?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7)
-[![Stars](https://img.shields.io/github/stars/SoCkEt7/Livediff?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/socket7)
+[![Security](https://img.shields.io/badge/🛡️_Nyxia.fr-Audit-000000?style=for-the-badge)](https://nyxia.fr)
+
+<br>
+
+```json
+{
+  "identity": "Antonin Nvh",
+  "tenure": "18 Years Technical R&D",
+  "expertise": ["AI Defense Layers", "Critical Infrastructure", "Offensive Security"],
+  "mission": "Building resilient systems for the post-AI era"
+}
+```
 
 ---
 
-### 📊 All-Time Intelligence (Live)
+### 📈 Strategic Pulse (Real-Time Activity)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
@@ -26,21 +37,58 @@
   </tr>
 </table>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=SoCkEt7&theme=tokyonight&background=000000&fire=ffffff&ring=ffffff&sideNums=999999&stroke=000000&currStreakNum=ffffff&currStreakLabel=ffffff&sideLabels=999999&dates=999999&hide_border=true" width="100%" />
+---
+
+### 🛡️ 18 Years of Expertise
+*A legacy of high-stakes R&D and defensive architecture.*
+
+- **Strategic Leadership:** CTO steering complex technical roadmaps and AI-driven growth.
+- **Security Forensics:** 18 years auditing critical infrastructures and hardening systems.
+- **Core Engineering:** Master-level development in **Rust**, **Python**, and **System Architecture**.
 
 ---
 
-### 🚀 Public Projects & Stealth R&D
+### 🚀 High-Impact Open Source
 
-| Target | Description | Field | Status |
+| Focus | Project | Tech | Impact |
 | :--- | :--- | :--- | :--- |
-| **[Livediff](https://github.com/SoCkEt7/Livediff)** | Live Terminal Diff Watcher (Ratatui) | `System` | `Public` |
-| **Lab-Alpha** | Confidential AI Security Architecture | `Defense` | `Private` |
-| **Lab-Beta** | OSS Intelligence & Marketing Pipeline | `Growth` | `Private` |
+| **Productivity** | **[Livediff](https://github.com/SoCkEt7/Livediff)** | `Rust` `Ratatui` | Real-time terminal diffing for massive refactors. |
+| **Security** | **Lab-Alpha** | `Confidential` | Modular AI-powered security auditing framework. |
+| **Intelligence** | **Lab-Beta** | `Python` `Data` | OSS Marketing automation and data intelligence. |
 
 ---
 
-### 🛠️ Strategic Arsenal & Networks
+### 🎙️ Thought Leadership (Latest from LinkedIn & Dev.to)
+
+<table width="100%">
+  <tr>
+    <td width="33%">
+      <a href="https://linkedin.com/in/socket7">
+        <img src="https://img.shields.io/badge/Article-AI_Defense-000000?style=for-the-badge&logo=linkedin" /><br/>
+        <b>Securing AI Pipelines</b><br/>
+        <i>Strategies for protecting LLM-based infra.</i>
+      </a>
+    </td>
+    <td width="33%">
+      <a href="https://dev.to/socket7">
+        <img src="https://img.shields.io/badge/Tech-Rust_TUI-000000?style=for-the-badge&logo=devdotto" /><br/>
+        <b>Terminal UI Efficiency</b><br/>
+        <i>Why the shell remains the ultimate DX.</i>
+      </a>
+    </td>
+    <td width="33%">
+      <a href="https://olive.click/en">
+        <img src="https://img.shields.io/badge/Strategy-OSS_Growth-000000?style=for-the-badge&logo=google-chrome" /><br/>
+        <b>Marketing for Devs</b><br/>
+        <i>Data-driven growth for OSS tools.</i>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Global Network & Arsenal
 
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
@@ -48,13 +96,11 @@
   <img src="https://img.shields.io/badge/Go-000000?style=flat-square&logo=go&logoColor=00ADD8" />
   <img src="https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=3178C6" />
   <img src="https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=2496ED" />
-  <img src="https://img.shields.io/badge/Security-OWASP-000000?style=flat-square&logo=shippable&logoColor=white" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=shippable&logoColor=white" />
 </p>
 
 <p align="center">
-  <a href="https://nyxia.fr"><img src="https://img.shields.io/badge/🛡️_Security-000000?style=for-the-badge" /></a>
-  <a href="https://olive.click/en"><img src="https://img.shields.io/badge/🌐_Digital-000000?style=for-the-badge" /></a>
-  <a href="https://linkedin.com/in/socket7"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <i>"Architecture is not just about structure; it's about the survival of the intent."</i>
 </p>
 
 </div>
