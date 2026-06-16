@@ -22,9 +22,10 @@
 
 ### 📈 Strategic Pulse (Real-Time Activity)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
-</p>
+<!-- 
+Note: L'animation Snake et les statistiques détaillées apparaîtront ici dès que vous aurez configuré 
+le METRICS_TOKEN dans les secrets de votre dépôt. 
+-->
 
 <table width="100%">
   <tr>
