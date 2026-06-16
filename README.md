@@ -28,8 +28,7 @@
 
 <p align="center">
   <!-- 
-  Graphique complet (Public + Privé) généré par Metrics
-  Inclut le calendrier de contribution (Full Graph) et les statistiques de langages avec icônes.
+  GRAPH COMPLET & LANGUAGES : Aspiration de TOUTES les statistiques (Public + Privé)
   -->
   <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/main/github-metrics.svg" alt="Antonin Nvh - Deep Technical Metrics" width="100%" />
 </p>
@@ -52,7 +51,7 @@
 ### 🚀 High-Impact Open Source & Stealth R&D
 
 | Focus | Project | Tech Stack | Impact |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | : :--- | :--- |
 | **Productivity** | **[Livediff](https://github.com/SoCkEt7/Livediff)** | `Rust` `Ratatui` | Real-time terminal diffing for massive refactors. |
 | **Forensics** | **Lab-Alpha** | `Python` `Audit` | Modular AI-powered security auditing framework. |
 | **Intelligence** | **Lab-Beta** | `JS` `Data` | LLM-powered social agent & Tech Discovery system. |
