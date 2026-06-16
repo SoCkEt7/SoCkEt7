@@ -23,16 +23,16 @@
 ### 📈 Strategic Pulse (Real-Time Activity)
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/dist/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
+</p>
+
+<p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SoCkEt7&theme=react-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="100%" />
 </p>
 
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <!-- 
-      Note: Ce widget affichera tes stats privées une fois le METRICS_TOKEN configuré.
-      En attendant, il utilise un rendu dynamique sécurisé.
-      -->
       <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true" width="100%" />
     </td>
     <td width="50%" align="center">
