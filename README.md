@@ -33,7 +33,7 @@
       Note: Ce widget affichera tes stats privées une fois le METRICS_TOKEN configuré.
       En attendant, il utilise un rendu dynamique sécurisé.
       -->
-      <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true&include_all_commits=true&count_private=true" width="100%" />
+      <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true" width="100%" />
     </td>
     <td width="50%" align="center">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SoCkEt7&layout=compact&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&hide_border=true&langs_count=10" width="100%" />
