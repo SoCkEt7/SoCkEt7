@@ -5,7 +5,7 @@
 
 [![Participation](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Participation&query=$.total_contributions&url=https://github-contributions-api.deno.dev/SoCkEt7.json&color=000000&labelColor=111111)](https://github.com/SoCkEt7)
 [![Followers](https://img.shields.io/github/followers/SoCkEt7?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7)
-[![Stars](https://img.shields.io/github/stars/SoCkEt7/Livediff?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7)
+[![Stars](https://img.shields.io/github/stars/SoCkEt7/Livediff?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7/Livediff)
 
 ---
 
@@ -28,17 +28,17 @@
 
 ---
 
-### 🚀 Projects & Labs
+### 🚀 Projects & Digital Presence
 
-| Project | Description | Tech Stack | Status |
+| Entity | Purpose | Signature | Status |
 | :--- | :--- | :--- | :--- |
-| **[Livediff](https://github.com/SoCkEt7/Livediff)** | Live Terminal Diff Watcher (Ratatui) | `Rust` `TUI` | `v0.3.0` |
-| **NyxSA** | AI Security Architecture Research | `Python` `Audit` | `Research` |
-| **Olive** | OSS Marketing Intelligence Pipeline | `JS` `Data` | `Internal` |
+| **[Nyxia](https://nyxia.fr)** | Security Audits & Defensive Architectures | `Security-Core` | [**Visit Site**](https://nyxia.fr) |
+| **[Livediff](https://github.com/SoCkEt7/Livediff)** | Live Terminal Diff Watcher (Ratatui) | `Rust-TUI` | `v0.3.0` |
+| **[Olive](https://olive.click/en)** | OSS Marketing Intelligence Pipeline | `Data-Lab` | [**Visit Site**](https://olive.click/en) |
 
 ---
 
-### 🛠️ Arsenal & Network
+### 🛠️ Strategic Arsenal & Personal Network
 
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
@@ -49,9 +49,10 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/socket7"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="https://dev.to/socket7"><img src="https://img.shields.io/badge/DEV.TO-0A0A0A?style=flat-square&logo=devdotto&logoColor=white" /></a>
-  <a href="https://olive.click/en"><img src="https://img.shields.io/badge/Olive_Click-000000?style=flat-square&logo=google-chrome&logoColor=white" /></a>
+  <a href="https://nyxia.fr"><img src="https://img.shields.io/badge/Nyxia.fr-000000?style=for-the-badge&logo=shield&logoColor=white" /></a>
+  <a href="https://olive.click/en"><img src="https://img.shields.io/badge/Olive.click-000000?style=for-the-badge&logo=google-chrome&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/socket7"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://dev.to/socket7"><img src="https://img.shields.io/badge/DEV.TO-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" /></a>
 </p>
 
 </div>
