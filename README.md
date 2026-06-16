@@ -94,6 +94,13 @@
 
 ---
 
+### 📡 Recent Live Activity
+
+<!-- START_SECTION:activity -->
+<!-- END_SECTION:activity -->
+
+---
+
 ### 🛠️ Global Arsenal
 
 <p align="center">
