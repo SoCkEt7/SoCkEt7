@@ -12,6 +12,7 @@ permissions:
   contents: write
 
 env:
+  # Force use of Node 24 for all actions to fix deprecation errors
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -29,20 +30,43 @@ jobs:
           user: SoCkEt7
           template: classic
           
-          # Focus strictly on Languages and Activity to avoid timeouts
-          base: header, activity, community, metadata
-          repositories_batch: 10 # Small batches to avoid GraphQL timeouts
+          # Global Settings
+          base: header, community, metadata
+          repositories_batch: 5
+          config_timezone: Europe/Paris
           
+          # FULL CONTRIBUTION GRAPH (Calendar squares)
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+          
+          # LANGUAGES FOCUS (All Repos, Icons, > 2%)
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, Makefile, cmake
           plugin_languages_details: percentage, lines
-          plugin_languages_threshold: 1%
-          plugin_languages_limit: 15
+          plugin_languages_threshold: 2%
+          plugin_languages_limit: 0
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes
           
+          # Activity plugin disabled here to fix "filter" crash in logs
+          plugin_activity: no
+          
+          # Lines of code
           plugin_lines: yes
-          plugin_activity: yes
-          plugin_activity_limit: 10
-          plugin_activity_days: 30
-          plugin_activity_filter: all
+
+  activity:
+    needs: metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update Activity Feed
+        uses: jamesgeorge007/github-activity-readme@master
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: SoCkEt7
+          COMMIT_MSG: "docs: sync activity feed [skip ci]"
+          MAX_LINES: 10

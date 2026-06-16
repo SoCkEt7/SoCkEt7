@@ -24,18 +24,18 @@
 
 ---
 
-### 📊 Strategic Intelligence (Global Activity)
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SoCkEt7&theme=react-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="100%" />
-</p>
+### 📈 Strategic Intelligence (Global Activity)
 
 <p align="center">
   <!-- 
-  Aspiration de TOUTES les statistiques (Public + Privé)
-  Langages avec icônes (seuil > 2%)
+  Graphique complet (Public + Privé) généré par Metrics
+  Inclut le calendrier de contribution (Full Graph) et les statistiques de langages avec icônes.
   -->
   <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/main/github-metrics.svg" alt="Antonin Nvh - Deep Technical Metrics" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SoCkEt7&theme=react-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="100%" />
 </p>
 
 ---
