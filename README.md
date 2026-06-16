@@ -35,8 +35,11 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true" alt="Global Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SoCkEt7&layout=compact&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&hide_border=true&langs_count=10" alt="Top Languages" />
+  <!-- 
+  Note: Cette image affichera TOUTES tes statistiques privées anonymisées 
+  (Langages, Commits totaux, etc.) une fois le METRICS_TOKEN configuré.
+  -->
+  <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/main/github-metrics.svg" alt="Deep Private Metrics (En attente du Token)" width="100%" />
 </p>
 
 ---
@@ -81,11 +84,6 @@
 ### 📡 Recent Live Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#2579](https://github.com/rust-unofficial/awesome-rust/pull/2579) in [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust)
-2. 🚀 Published release [v0.3.0 - The Nyxia Edition](https://github.com/SoCkEt7/Livediff/releases/tag/v0.3.0) in [SoCkEt7/Livediff](https://github.com/SoCkEt7/Livediff)
-3. 💪 Opened PR [#2579](https://github.com/rust-unofficial/awesome-rust/pull/2579) in [rust-unofficial/awesome-rust](https://github.com/rust-unofficial/awesome-rust)
-4. 🔒 Closed issue [#11](https://github.com/SoCkEt7/Livediff/issues/11) in [SoCkEt7/Livediff](https://github.com/SoCkEt7/Livediff)
-5. 🔒 Closed issue [#6](https://github.com/SoCkEt7/Livediff/issues/6) in [SoCkEt7/Livediff](https://github.com/SoCkEt7/Livediff)
 <!--END_SECTION:activity-->
 
 ---
