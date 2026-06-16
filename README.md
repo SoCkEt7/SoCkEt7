@@ -1,13 +1,17 @@
-<div align="center">
+<h1 align="center">⚡ Antonin Nvh</h1>
 
-# Antonin Nvh
-**CTO × AI Security Architect | Critical Infrastructure | 18y R&D**
-
-[![Participation](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Participation&query=$.total_contributions&url=https://github-contributions-api.deno.dev/SoCkEt7.json&color=000000&labelColor=111111)](https://github.com/SoCkEt7)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/socket7)
-[![Security](https://img.shields.io/badge/🛡️_Nyxia.fr-Audit-000000?style=for-the-badge)](https://nyxia.fr)
-
-<br>
+<p align="center">
+  <b>CTO × AI Security Architect | Critical Infrastructure | 18y R&D</b><br><br>
+  <a href="https://github.com/SoCkEt7">
+    <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Participation&query=$.total_contributions&url=https://github-contributions-api.deno.dev/SoCkEt7.json&color=000000&labelColor=111111" alt="Participation" />
+  </a>
+  <a href="https://linkedin.com/in/socket7">
+    <img src="https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://nyxia.fr">
+    <img src="https://img.shields.io/badge/🛡️_Nyxia.fr-Audit-000000?style=for-the-badge" alt="Security" />
+  </a>
+</p>
 
 ```json
 {
@@ -30,16 +34,10 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SoCkEt7&theme=react-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="100%" />
 </p>
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true" width="100%" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SoCkEt7&layout=compact&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&hide_border=true&langs_count=10" width="100%" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true" alt="Global Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SoCkEt7&layout=compact&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&hide_border=true&langs_count=10" alt="Top Languages" />
+</p>
 
 ---
 
@@ -66,31 +64,17 @@
 
 ### 🎙️ Thought Leadership (Latest from LinkedIn & Dev.to)
 
-<table width="100%">
-  <tr>
-    <td width="33%">
-      <a href="https://linkedin.com/in/socket7">
-        <img src="https://img.shields.io/badge/Article-AI_Defense-000000?style=for-the-badge&logo=linkedin" /><br/>
-        <b>Securing AI Pipelines</b><br/>
-        <i>Strategies for protecting LLM-based infra.</i>
-      </a>
-    </td>
-    <td width="33%">
-      <a href="https://dev.to/socket7">
-        <img src="https://img.shields.io/badge/Tech-Rust_TUI-000000?style=for-the-badge&logo=devdotto" /><br/>
-        <b>Terminal UI Efficiency</b><br/>
-        <i>Why the shell remains the ultimate DX.</i>
-      </a>
-    </td>
-    <td width="33%">
-      <a href="https://olive.click/en">
-        <img src="https://img.shields.io/badge/Strategy-OSS_Growth-000000?style=for-the-badge&logo=google-chrome" /><br/>
-        <b>Marketing for Devs</b><br/>
-        <i>Data-driven growth for OSS tools.</i>
-      </a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://linkedin.com/in/socket7">
+    <img src="https://img.shields.io/badge/Article-AI_Defense-000000?style=for-the-badge&logo=linkedin" alt="AI Defense" />
+  </a>
+  <a href="https://dev.to/socket7">
+    <img src="https://img.shields.io/badge/Tech-Rust_TUI-000000?style=for-the-badge&logo=devdotto" alt="Rust TUI" />
+  </a>
+  <a href="https://olive.click/en">
+    <img src="https://img.shields.io/badge/Strategy-OSS_Growth-000000?style=for-the-badge&logo=google-chrome" alt="OSS Growth" />
+  </a>
+</p>
 
 ---
 
@@ -109,17 +93,15 @@
 ### 🛠️ Global Arsenal
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=3776AB" />
-  <img src="https://img.shields.io/badge/Go-000000?style=flat-square&logo=go&logoColor=00ADD8" />
-  <img src="https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=3178C6" />
-  <img src="https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=2496ED" />
-  <img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=shippable&logoColor=white" />
-  <img src="https://img.shields.io/badge/Shell-000000?style=flat-square&logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Python-000000?style=flat-square&logo=python&logoColor=3776AB" alt="Python" />
+  <img src="https://img.shields.io/badge/Go-000000?style=flat-square&logo=go&logoColor=00ADD8" alt="Go" />
+  <img src="https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=3178C6" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=2496ED" alt="Docker" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=shippable&logoColor=white" alt="OWASP" />
+  <img src="https://img.shields.io/badge/Shell-000000?style=flat-square&logo=gnubash&logoColor=white" alt="Shell" />
 </p>
 
 <p align="center">
   <i>"Architecture is not just about structure; it's about the survival of the intent."</i>
 </p>
-
-</div>
