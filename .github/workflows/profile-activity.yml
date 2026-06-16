@@ -28,17 +28,15 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: SoCkEt7
           template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Europe/Paris
           
-          # AGGRESSIVE SCAN (All Repos, All Roles)
-          repositories: 150
-          repositories_affiliations: owner, collaborator, organization_member
+          # Focus strictly on Languages and Activity to avoid timeouts
+          base: header, activity, community, metadata
+          repositories_batch: 10 # Small batches to avoid GraphQL timeouts
           
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, Makefile, cmake
           plugin_languages_details: percentage, lines
-          plugin_languages_threshold: 0%
+          plugin_languages_threshold: 1%
           plugin_languages_limit: 15
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes
@@ -48,20 +46,3 @@ jobs:
           plugin_activity_limit: 10
           plugin_activity_days: 30
           plugin_activity_filter: all
-
-  activity:
-    needs: metrics
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Update Activity Section
-        uses: jamesgeorge007/github-activity-readme@master
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          GH_USERNAME: SoCkEt7
-          COMMIT_MSG: "docs: sync activity feed [skip ci]"
-          MAX_LINES: 10
