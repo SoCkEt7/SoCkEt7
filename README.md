@@ -22,10 +22,9 @@
 
 ### 📈 Strategic Pulse (Real-Time Activity)
 
-<!-- 
-Note: L'animation Snake et les statistiques détaillées apparaîtront ici dès que vous aurez configuré 
-le METRICS_TOKEN dans les secrets de votre dépôt. 
--->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SoCkEt7&theme=react-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="100%" />
+</p>
 
 <table width="100%">
   <tr>
