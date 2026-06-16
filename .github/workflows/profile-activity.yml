@@ -1,8 +1,8 @@
-name: Update Profile README
+name: Update Profile Data
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Every day at midnight
+    - cron: "0 */6 * * *" # Every 6 hours
   workflow_dispatch:
   push:
     branches:
@@ -15,15 +15,14 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  publish:
+  metrics:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Deep Private Metrics
+      - name: Full Technical Metrics
         uses: lowlighter/metrics@latest
-        continue-on-error: true
         with:
           filename: github-metrics.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -32,47 +31,26 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Paris
           
-          # Plugin Languages: Scan ALL repos indepth
+          # Languages Focus (All Repos, Icons included in classic template)
           plugin_languages: yes
-          plugin_languages_indepth: yes
-          plugin_languages_ignored: html, css, tex, Makefile
+          plugin_languages_ignored: html, css, tex, Makefile, tex, cmake
           plugin_languages_details: percentage, lines
-          plugin_languages_limit: 0
           plugin_languages_threshold: 2%
-          plugin_languages_other: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_indepth: no # Disabled to avoid timeouts on 100+ repos
           
-          # Lines of code plugin
+          # Activity & Lines
           plugin_lines: yes
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 30
+          plugin_activity_filter: all
 
-      - name: Recent Activity
+      - name: Recent Activity Marker
         uses: jamesgeorge007/github-activity-readme@master
-        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           COMMIT_MSG: "docs: update recent activity [skip ci]"
-          MAX_LINES: 5
-
-  snake:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Generate Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: SoCkEt7
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Push Snake
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_LINES: 10

@@ -27,18 +27,13 @@
 ### 📊 Strategic Intelligence (Global Activity)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SoCkEt7&theme=react-dark&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="100%" />
 </p>
 
 <p align="center">
   <!-- 
-  Aspiration profonde de TOUTES les statistiques (Public + Privé)
-  Scan complet de l'historique de chaque dépôt.
-  Filtrage : Langages > 2% uniquement.
+  Aspiration de TOUTES les statistiques (Public + Privé)
+  Langages avec icônes (seuil > 2%)
   -->
   <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/main/github-metrics.svg" alt="Antonin Nvh - Deep Technical Metrics" width="100%" />
 </p>
