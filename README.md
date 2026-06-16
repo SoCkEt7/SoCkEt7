@@ -27,7 +27,7 @@
 ### 📊 Strategic Intelligence (Global Activity)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/dist/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
+  <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
 </p>
 
 <p align="center">
