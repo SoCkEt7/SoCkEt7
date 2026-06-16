@@ -30,22 +30,25 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Paris
-          
-          # Languages Focus (All Repos, Icons included in classic template)
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, Makefile, tex, cmake
+          plugin_languages_ignored: html, css, tex, Makefile, cmake
           plugin_languages_details: percentage, lines
           plugin_languages_threshold: 2%
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_languages_indepth: no # Disabled to avoid timeouts on 100+ repos
-          
-          # Activity & Lines
+          plugin_languages_indepth: no
           plugin_lines: yes
           plugin_activity: yes
           plugin_activity_limit: 5
           plugin_activity_days: 30
           plugin_activity_filter: all
+
+  activity:
+    needs: metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Recent Activity Marker
         uses: jamesgeorge007/github-activity-readme@master
