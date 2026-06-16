@@ -1,10 +1,10 @@
 <div align="center">
 
 # ⚡ SoCkEt7
-**18y CTO × AI Security Architect | Building AI Defense Layers for Critical Infrastructure**
+**CTO × AI Security Architect | Building AI Defense Layers for Critical Infrastructure | 18y R&D**
 
 [![Followers](https://img.shields.io/github/followers/SoCkEt7?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7)
-[![Stars](https://img.shields.io/github/stars/SoCkEt7/Livediff?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7/Livediff)
+[![Stars](https://img.shields.io/github/stars/SoCkEt7/Livediff?style=for-the-badge&color=000000&labelColor=111111&logo=github)](https://github.com/SoCkEt7)
 [![Contributions](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Participation&query=$.total_contributions&url=https://github-contributions-api.deno.dev/SoCkEt7.json&color=000000&labelColor=111111)](https://github.com/SoCkEt7)
 
 <br>
@@ -18,15 +18,15 @@
 ### 🛡️ The Nyxia Signature
 *Minimalist. Shell-first. Proof-driven.*
 
-Expert en **Sécurité AI** et **Infrastructures Critiques**, je conçois des outils qui survivent au terminal et des architectures qui résistent à l'offensive. Chaque projet suit la charte **Nyxia** : efficacité radicale, esthétique sombre et preuve par le code.
+Expert en **Sécurité AI** et **R&D Systèmes**, je conçois des couches de défense pour les infrastructures critiques. Chaque projet suit la charte **Nyxia** : une efficacité radicale, une esthétique abyssale et une validation par le code.
 
 <br>
 
-### 💼 Executive Profile (Scrapped from LinkedIn)
+### 💼 Executive Profile
 - 🏢 **Role:** CTO & AI Security Architect
 - 🎯 **Focus:** AI Defense Layers, Critical Infrastructure, Offensive Security
 - 🌍 **Location:** Paris, France
-- 🛠️ **Expertise:** 18 years of technical leadership and system auditing
+- 🛠️ **Expertise:** 18 years of technical leadership and R&D
 
 ---
 
@@ -43,7 +43,7 @@ Expert en **Sécurité AI** et **Infrastructures Critiques**, je conçois des ou
 
 ---
 
-### 🚀 High-Impact Participation: Livediff
+### 🚀 High-Impact Project: Livediff
 **Live Terminal Diff Watcher.** 
 
 Livediff est mon projet phare en Rust (Ratatui). Il transforme la boucle de feedback des développeurs en permettant une visibilité instantanée sur les changements système.
