@@ -24,7 +24,7 @@
 
 ---
 
-### 📈 Strategic Pulse (Real-Time Activity)
+### 📊 Strategic Intelligence (Global Activity)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/output/dist/github-contribution-grid-snake.svg" alt="Activity Snake" width="100%" />
@@ -36,8 +36,9 @@
 
 <p align="center">
   <!-- 
-  Aspiration automatique de toutes les statistiques (Public + Privé)
-  Mise à jour quotidienne via GitHub Actions
+  Aspiration profonde de TOUTES les statistiques (Public + Privé)
+  Scan complet de l'historique de chaque dépôt.
+  Filtrage : Langages > 2% uniquement.
   -->
   <img src="https://raw.githubusercontent.com/SoCkEt7/SoCkEt7/main/github-metrics.svg" alt="Antonin Nvh - Deep Technical Metrics" width="100%" />
 </p>
