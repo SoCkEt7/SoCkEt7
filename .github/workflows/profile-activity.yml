@@ -2,7 +2,7 @@ name: Update Profile Data
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # Every 6 hours
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -30,16 +30,21 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Paris
+          
+          # Force Full Language Scan (All Repos, Public + Private)
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, Makefile, cmake
           plugin_languages_details: percentage, lines
-          plugin_languages_threshold: 2%
-          plugin_languages_limit: 8
+          plugin_languages_threshold: 1%
+          plugin_languages_limit: 10
           plugin_languages_sections: most-used
-          plugin_languages_indepth: no
+          plugin_languages_indepth: yes
+          plugin_languages_analysis_timeout: 30
+          
+          # Lines & Activity
           plugin_lines: yes
           plugin_activity: yes
-          plugin_activity_limit: 5
+          plugin_activity_limit: 8
           plugin_activity_days: 30
           plugin_activity_filter: all
 
@@ -50,10 +55,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Recent Activity Marker
+      - name: Update Activity Section
         uses: jamesgeorge007/github-activity-readme@master
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          COMMIT_MSG: "docs: update recent activity [skip ci]"
+          COMMIT_MSG: "docs: update activity feed [skip ci]"
           MAX_LINES: 10
