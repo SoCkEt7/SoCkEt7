@@ -29,6 +29,10 @@
 <table width="100%">
   <tr>
     <td width="50%" align="center">
+      <!-- 
+      Note: Ce widget affichera tes stats privées une fois le METRICS_TOKEN configuré.
+      En attendant, il utilise un rendu dynamique sécurisé.
+      -->
       <img src="https://github-readme-stats.vercel.app/api?username=SoCkEt7&show_icons=true&theme=tokyonight&bg_color=000000&title_color=ffffff&text_color=999999&icon_color=ffffff&hide_border=true&include_all_commits=true&count_private=true" width="100%" />
     </td>
     <td width="50%" align="center">
@@ -48,13 +52,15 @@
 
 ---
 
-### 🚀 High-Impact Open Source
+### 🚀 High-Impact Open Source & Stealth R&D
 
-| Focus | Project | Tech | Impact |
+| Focus | Project | Tech Stack | Impact |
 | :--- | :--- | :--- | :--- |
 | **Productivity** | **[Livediff](https://github.com/SoCkEt7/Livediff)** | `Rust` `Ratatui` | Real-time terminal diffing for massive refactors. |
-| **Security** | **Lab-Alpha** | `Confidential` | Modular AI-powered security auditing framework. |
-| **Intelligence** | **Lab-Beta** | `Python` `Data` | OSS Marketing automation and data intelligence. |
+| **Forensics** | **Lab-Alpha** | `Python` `Audit` | Modular AI-powered security auditing framework. |
+| **Intelligence** | **Lab-Beta** | `JS` `Data` | LLM-powered social agent & Tech Discovery system. |
+| **Performance** | **Lab-Gamma** | `Rust` `Network` | High-speed security scanning & network reconnaissance. |
+| **Automation** | **Lab-Delta** | `Shell` `DevOps` | Universal multi-platform repository synchronization. |
 
 ---
 
@@ -88,7 +94,7 @@
 
 ---
 
-### 🛠️ Global Network & Arsenal
+### 🛠️ Global Arsenal
 
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
@@ -97,6 +103,7 @@
   <img src="https://img.shields.io/badge/TypeScript-000000?style=flat-square&logo=typescript&logoColor=3178C6" />
   <img src="https://img.shields.io/badge/Docker-000000?style=flat-square&logo=docker&logoColor=2496ED" />
   <img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=shippable&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell-000000?style=flat-square&logo=gnubash&logoColor=white" />
 </p>
 
 <p align="center">
