@@ -28,23 +28,25 @@ jobs:
           # Base Configuration
           base: header, repositories, metadata
           config_timezone: Europe/Paris
-
-          # Repository Discovery
           repositories_batch: 20
-          repositories_affiliations: owner, collaborator, organization_member
           
-          # Full Contribution Calendar
-          plugin_calendar: yes
-          plugin_calendar_limit: 2
+          # Isometric Calendar (Lighter and prettier than standard)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
           
-          # Languages Focus
+          # LANGUAGES (Icons + Deep Scan + All Repos)
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_details: percentage, lines
           plugin_languages_threshold: 1%
-          plugin_languages_limit: 0
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used, recently-used
           plugin_languages_ignored: html, css, tex, Makefile, cmake
-          plugin_languages_sections: most-used
+          
+          # Tech Stack Icons (via Repo Topics)
+          plugin_topics: yes
+          plugin_topics_limit: 15
+          plugin_topics_mode: icons
           
           # Lines of code
           plugin_lines: yes
