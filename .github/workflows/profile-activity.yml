@@ -12,6 +12,7 @@ permissions:
   contents: write
 
 env:
+  # Force use of Node 24 for all actions to fix deprecation errors
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -31,6 +32,10 @@ jobs:
           # Base Configuration
           base: header, repositories, metadata
           config_timezone: Europe/Paris
+
+          # Repository Discovery (Fix for "0 Languages" and timeouts)
+          repositories_batch: 20
+          repositories_affiliations: owner, collaborator, organization_member
           
           # FULL CONTRIBUTION CALENDAR (The "Graph Complet")
           plugin_calendar: yes
@@ -43,6 +48,24 @@ jobs:
           plugin_languages_threshold: 1%
           plugin_languages_limit: 0
           plugin_languages_ignored: html, css, tex, Makefile, cmake
+          plugin_languages_sections: most-used
           
           # Lines & Activity
           plugin_lines: yes
+
+  activity:
+    needs: metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update Activity Feed
+        uses: jamesgeorge007/github-activity-readme@master
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GH_USERNAME: SoCkEt7
+          COMMIT_MSG: "docs: sync activity feed [skip ci]"
+          MAX_LINES: 10
