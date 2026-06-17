@@ -11,10 +11,6 @@ on:
 permissions:
   contents: write
 
-env:
-  # Force use of Node 24 for all actions to fix deprecation errors
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   metrics:
     runs-on: ubuntu-latest
@@ -33,15 +29,15 @@ jobs:
           base: header, repositories, metadata
           config_timezone: Europe/Paris
 
-          # Repository Discovery (Fix for "0 Languages" and timeouts)
+          # Repository Discovery
           repositories_batch: 20
           repositories_affiliations: owner, collaborator, organization_member
           
-          # FULL CONTRIBUTION CALENDAR (The "Graph Complet")
+          # Full Contribution Calendar
           plugin_calendar: yes
           plugin_calendar_limit: 2
           
-          # LANGUAGES (Icons + Deep Scan + All Repos)
+          # Languages Focus
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_details: percentage, lines
@@ -50,7 +46,7 @@ jobs:
           plugin_languages_ignored: html, css, tex, Makefile, cmake
           plugin_languages_sections: most-used
           
-          # Lines & Activity
+          # Lines of code
           plugin_lines: yes
 
   activity:
@@ -64,7 +60,7 @@ jobs:
         uses: jamesgeorge007/github-activity-readme@master
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
         with:
           GH_USERNAME: SoCkEt7
           COMMIT_MSG: "docs: sync activity feed [skip ci]"
