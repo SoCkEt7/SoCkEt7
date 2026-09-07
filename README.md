@@ -46,7 +46,7 @@ If you use **[Livediff](https://github.com/SoCkEt7/Livediff)** or benefit from m
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/antoninnvh">
-    <img src="buymeacoffee-card.svg?v=20260907-5" width="100%" alt="Buy Me a Coffee Patronage Dashboard - Antonin Nivoche" />
+    <img src="buymeacoffee-card.svg?v=20260907-7" width="100%" alt="Buy Me a Coffee Patronage Dashboard - Antonin Nivoche" />
   </a>
 </p>
 
