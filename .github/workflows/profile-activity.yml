@@ -1,0 +1,46 @@
+name: Update Profile Telemetry
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "github-metrics.svg"
+      - "buymeacoffee-card.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  telemetry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Synchronize Telemetry & Patronage Dashboard
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          python3 .github/scripts/update_telemetry.py
+
+      - name: Commit Updated Dashboards
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain github-metrics.svg buymeacoffee-card.svg) ]]; then
+            git add github-metrics.svg buymeacoffee-card.svg
+            git commit -m "chore(telemetry): update sovereign metrics & patronage dashboard [skip ci]"
+            git push
+          else
+            echo "Telemetry graphics are already up-to-date."
+          fi

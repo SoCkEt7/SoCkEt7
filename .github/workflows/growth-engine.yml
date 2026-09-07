@@ -1,0 +1,34 @@
+name: "Profile Visibility & Growth Automation"
+
+on:
+  schedule:
+    - cron: '0 8,14,20 * * *' # 3x par jour (8h, 14h, 20h UTC)
+  workflow_dispatch:
+
+jobs:
+  growth-automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Restore Growth Cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: growth-cache-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            growth-cache-${{ runner.os }}-
+
+      - name: Run Growth Engine
+        env:
+          GROWTH_PAT: ${{ secrets.GROWTH_PAT }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          GROWTH_CACHE_DIR: .cache
+        run: |
+          bun run .github/scripts/growth_engine.ts

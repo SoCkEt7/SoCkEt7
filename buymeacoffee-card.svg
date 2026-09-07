@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="100%" height="220">
+  <defs>
+    <!-- Dark Luxury Background & Subtle Gradients -->
+    <linearGradient id="bmcBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080b12"/>
+      <stop offset="100%" stop-color="#04060a"/>
+    </linearGradient>
+    <radialGradient id="bmcGlow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#FFDD00" stop-opacity="0.07"/>
+      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#080b12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bmcBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#FFDD00" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="goldButton" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#FBBF24"/>
+    </linearGradient>
+
+    <style>
+      @keyframes pulse-yellow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px #FFDD00); }
+      }
+      @keyframes beacon-bmc {
+        0% { r: 3px; opacity: 0.9; }
+        100% { r: 8px; opacity: 0; }
+      }
+      .pulse-bmc {
+        animation: pulse-yellow 2.5s ease-in-out infinite;
+      }
+      .beacon-ring-bmc {
+        animation: beacon-bmc 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Panel -->
+  <rect width="960" height="220" rx="8" fill="url(#bmcBg)"/>
+  <rect width="960" height="220" rx="8" fill="url(#bmcGlow)"/>
+  <rect x="0.5" y="0.5" width="959" height="219" rx="7.5" fill="none" stroke="url(#bmcBorder)" stroke-width="1"/>
+
+  <!-- Top Telemetry Header -->
+  <g transform="translate(32, 22)">
+    <circle cx="4" cy="4" r="3" fill="#FFDD00" opacity="0.9" class="pulse-bmc"/>
+    <circle cx="4" cy="4" r="3" fill="none" stroke="#FFDD00" stroke-width="0.8" class="beacon-ring-bmc"/>
+    <text x="16" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#f8fafc" letter-spacing="0.3">Buy Me a Coffee Patronage</text>
+    <text x="195" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#334155">/</text>
+    <text x="208" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#64748b">creator <tspan fill="#cbd5e1" font-weight="500">@antoninnvh</tspan></text>
+    <text x="315" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#334155">/</text>
+    <text x="328" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#64748b">status <tspan fill="#FFDD00" font-weight="500">accepting support</tspan></text>
+
+    <!-- Top Right Direct Link Pill -->
+    <g transform="translate(680, -4)">
+      <rect x="0" y="0" width="216" height="22" rx="4" fill="url(#goldButton)"/>
+      <text x="16" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="700" fill="#000000">☕ buymeacoffee.com/antoninnvh</text>
+    </g>
+  </g>
+
+  <!-- Divider -->
+  <line x1="32" y1="42" x2="928" y2="42" stroke="#131b2c" stroke-width="0.8"/>
+
+  <!-- ==================== 3 TIERS GRID ==================== -->
+  <g transform="translate(32, 58)">
+    <!-- TIER 1: Coffee Supporter -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="288" height="138" rx="6" fill="#070c16" stroke="#172438" stroke-width="0.8"/>
+      <rect x="0" y="0" width="288" height="3" rx="1.5" fill="#FFDD00" opacity="0.8"/>
+      
+      <!-- Tier Badge -->
+      <rect x="14" y="14" width="76" height="18" rx="3" fill="#141c2b" stroke="#22334d" stroke-width="0.6"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9" font-weight="600" fill="#FFDD00">☕ FUEL · $5</text>
+      
+      <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Single Coffee Patron</text>
+      <text x="14" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">One-time contribution fueling nightly</text>
+      <text x="14" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">Rust &amp; Ratatui open-source R&amp;D.</text>
+
+      <g transform="translate(14, 108)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8.5" fill="#38bdf8">
+        <text x="0" y="0">✓ Mention in Release Notes</text>
+        <text x="0" y="14">✓ Direct Open-Source Impact</text>
+      </g>
+    </g>
+
+    <!-- TIER 2: Pro Backer -->
+    <g transform="translate(304, 0)">
+      <rect x="0" y="0" width="288" height="138" rx="6" fill="#070c16" stroke="#1e3a5f" stroke-width="0.9"/>
+      <rect x="0" y="0" width="288" height="3" rx="1.5" fill="#38bdf8" opacity="0.9"/>
+      
+      <!-- Tier Badge -->
+      <rect x="14" y="14" width="94" height="18" rx="3" fill="#0c2340" stroke="#0284c7" stroke-width="0.6"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9" font-weight="600" fill="#38bdf8">⚡ PRO · $25 / MO</text>
+      
+      <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Monthly Pro Backer</text>
+      <text x="14" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">Sustained backer support for Livediff</text>
+      <text x="14" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">and high-throughput terminal tooling.</text>
+
+      <g transform="translate(14, 108)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8.5" fill="#38bdf8">
+        <text x="0" y="0">✓ Priority Feature &amp; Bug Triage</text>
+        <text x="0" y="14">✓ Permanent Backer Badge in README</text>
+      </g>
+    </g>
+
+    <!-- TIER 3: Corporate Sponsor -->
+    <g transform="translate(608, 0)">
+      <rect x="0" y="0" width="288" height="138" rx="6" fill="#070c16" stroke="#2a1f4d" stroke-width="0.8"/>
+      <rect x="0" y="0" width="288" height="3" rx="1.5" fill="#a855f7" opacity="0.9"/>
+      
+      <!-- Tier Badge -->
+      <rect x="14" y="14" width="128" height="18" rx="3" fill="#24143d" stroke="#7e22ce" stroke-width="0.6"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9" font-weight="600" fill="#c084fc">🛡️ ENTERPRISE · $150+/MO</text>
+      
+      <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Corporate &amp; Lab Sponsor</text>
+      <text x="14" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">Institutional sponsorship for offensive</text>
+      <text x="14" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">security &amp; AI defense architectures.</text>
+
+      <g transform="translate(14, 108)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8.5" fill="#c084fc">
+        <text x="0" y="0">✓ High-Visibility Logo on Flagships</text>
+        <text x="0" y="14">✓ Direct Architectural Advisory Channel</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Line -->
+  <g transform="translate(32, 208)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#475569">
+    <text x="0" y="0">Sovereign patron layer · 100% direct developer funding · transparent open source governance</text>
+    <text x="896" y="0" fill="#FFDD00" font-weight="500" text-anchor="end">buymeacoffee.com/antoninnvh</text>
+  </g>
+</svg>

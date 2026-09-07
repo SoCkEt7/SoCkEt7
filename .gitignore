@@ -1,0 +1,16 @@
+# Local internal guides & marketing instructions
+.internal/
+sponsoring/
+SPONSORING.md
+*.local.md
+.omc/
+.omo/
+
+# Local cache, CRM & temporary data
+.cache/
+data/
+LEADS.md
+*.log
+.DS_Store
+__pycache__/
+*.pyc
