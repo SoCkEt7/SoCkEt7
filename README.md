@@ -19,19 +19,19 @@
 
 ### Featured Flagship: [Livediff (230★)](https://github.com/SoCkEt7/Livediff)
 
-> **Live terminal diffs while files change.** High-performance Rust TUI built with Ratatui to eliminate feedback latency during AI codegen, AST refactorings, migrations, and agentic workflows.
+> **Live terminal diffs while files change.** High-performance Rust TUI built with Ratatui & Tokio to eliminate feedback latency during AI codegen, AST refactorings, migrations, and batch file rewriting.
 
 ```bash
 # Homebrew (macOS / Linux)
 brew install socket7/tap/livediff
 
-# Cargo (Rust toolchain)
+# Cargo (Rust toolchain - v3.3.0)
 cargo install livediff
 ```
 
 <p align="left">
   <a href="https://github.com/SoCkEt7/Livediff"><img src="https://img.shields.io/badge/GitHub-Repo%20(230★)-38bdf8?style=flat-square&logo=github&logoColor=white&labelColor=070a12" height="20" alt="Repo" /></a>
-  <a href="https://crates.io/crates/livediff"><img src="https://img.shields.io/crates/v/livediff.svg?style=flat-square&color=0284c7&labelColor=070a12" height="20" alt="Crates.io" /></a>
+  <a href="https://crates.io/crates/livediff"><img src="https://img.shields.io/crates/v/livediff.svg?style=flat-square&color=0284c7&labelColor=070a12" height="20" alt="Crates.io v3.3.0" /></a>
   <a href="https://socket7.github.io/Livediff/"><img src="https://img.shields.io/badge/Web_Showcase-Live_Simulator-7dd3fc?style=flat-square&logo=google-chrome&logoColor=black&labelColor=070a12" height="20" alt="Live Demo" /></a>
   <a href="https://github.com/rust-unofficial/awesome-rust"><img src="https://img.shields.io/badge/Curated-Awesome--Rust-38bdf8?style=flat-square&logo=rust&logoColor=white&labelColor=070a12" height="20" alt="Awesome-Rust" /></a>
   <a href="https://github.com/ratatui-org/awesome-ratatui"><img src="https://img.shields.io/badge/Featured-Awesome--Ratatui-0284c7?style=flat-square&logo=terminal&logoColor=white&labelColor=070a12" height="20" alt="Awesome-Ratatui" /></a>
