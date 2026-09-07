@@ -31,22 +31,45 @@ const GITHUB_TOKEN = process.env.GROWTH_PAT || process.env.GITHUB_TOKEN || proce
 const TARGET_USER = process.env.GITHUB_REPOSITORY_OWNER || "SoCkEt7";
 
 const CONFIG = {
-  maxFollowsPerRun: 12,
-  maxStarsPerRun: 6,
-  minDelayMs: 2500,
-  maxDelayMs: 6000,
+  maxFollowsPerRun: 10,
+  maxStarsPerRun: 5,
+  minDelayMs: 3000,
+  maxDelayMs: 7500,
   topicQueries: [
-    "topic:cybersecurity stars:>50 pushed:>2026-08-01",
-    "topic:ratatui stars:>10 pushed:>2026-08-01",
-    "topic:llm topic:agent stars:>100 pushed:>2026-08-01",
-    "topic:ebpf stars:>30 pushed:>2026-08-01",
-    "language:rust stars:>100 pushed:>2026-08-15",
-    "topic:offensive-security stars:>50",
-    "topic:tui language:rust stars:>50",
+    "topic:cybersecurity stars:>30 pushed:>2026-08-01",
+    "topic:ratatui stars:>5 pushed:>2026-08-01",
+    "topic:terminal-app language:rust stars:>20",
+    "topic:llm-security stars:>20 pushed:>2026-08-01",
+    "topic:offensive-security stars:>30 pushed:>2026-08-01",
+    "topic:ebpf language:rust stars:>20",
+    "topic:zero-trust stars:>20 pushed:>2026-08-01",
+    "topic:model-context-protocol stars:>15 pushed:>2026-08-01",
+    "topic:agentic-ai stars:>50 pushed:>2026-08-01",
+  ],
+  userDirectQueries: [
+    "location:Paris followers:>20 repos:>5 language:rust",
+    "location:France bio:CTO followers:>30",
+    "bio:security bio:architect followers:>50",
+    "bio:founder language:rust followers:>30",
   ],
   keywordsScore: [
-    "cto", "founder", "co-founder", "ceo", "security", "cyber", "infosec", 
-    "architect", "lead", "staff", "principal", "rust", "tui", "agentic", "ai", "devops", "head of"
+    { word: "cto", weight: 20 },
+    { word: "founder", weight: 20 },
+    { word: "co-founder", weight: 20 },
+    { word: "ceo", weight: 15 },
+    { word: "head of security", weight: 25 },
+    { word: "security architect", weight: 25 },
+    { word: "ciso", weight: 25 },
+    { word: "cybersecurity", weight: 15 },
+    { word: "infosec", weight: 15 },
+    { word: "offensive", weight: 15 },
+    { word: "ratatui", weight: 20 },
+    { word: "rust", weight: 15 },
+    { word: "zero-trust", weight: 15 },
+    { word: "nis2", weight: 20 },
+    { word: "ebpf", weight: 15 },
+    { word: "staff engineer", weight: 15 },
+    { word: "principal engineer", weight: 15 },
   ]
 };
 
@@ -144,6 +167,20 @@ async function getUserTopRepo(username: string): Promise<string | null> {
   return null;
 }
 
+async function getDirectUsers(): Promise<string[]> {
+  const selectedQuery = CONFIG.userDirectQueries[Math.floor(Math.random() * CONFIG.userDirectQueries.length)];
+  console.log(`🎯 Direct User Search: "${selectedQuery}"`);
+  const res = await githubFetch(`/search/users?q=${encodeURIComponent(selectedQuery)}&sort=followers&order=desc&per_page=12`);
+  if (!res.ok) return [];
+  const data = await res.json();
+  return (data.items || []).map((u: any) => u.login).filter((u: string) => u && u !== TARGET_USER);
+}
+
+async function checkMutual(username: string): Promise<boolean> {
+  const res = await githubFetch(`/users/${username}/following/${TARGET_USER}`);
+  return res.status === 204;
+}
+
 async function evaluateUser(username: string): Promise<{ profile: any; score: number; isQualified: boolean; isKOL: boolean }> {
   const res = await githubFetch(`/users/${username}`);
   if (!res.ok) return { profile: null, score: 0, isQualified: false, isKOL: false };
@@ -154,23 +191,23 @@ async function evaluateUser(username: string): Promise<{ profile: any; score: nu
   }
 
   let score = 5;
-  const bioText = `${user.bio || ""} ${user.company || ""} ${user.name || ""}`.toLowerCase();
+  const bioText = `${user.bio || ""} ${user.company || ""} ${user.name || ""} ${user.location || ""}`.toLowerCase();
 
-  for (const keyword of CONFIG.keywordsScore) {
-    if (bioText.includes(keyword)) {
-      score += 15;
+  for (const { word, weight } of CONFIG.keywordsScore) {
+    if (bioText.includes(word)) {
+      score += weight;
     }
   }
 
-  const isKOL = user.followers >= 500;
-  if (isKOL) score += 25;
-  else if (user.followers > 100) score += 10;
+  const isKOL = user.followers >= 400;
+  if (isKOL) score += 20;
+  else if (user.followers > 80) score += 10;
   else if (user.followers > 20) score += 5;
 
   if (user.blog) score += 5;
   if (user.twitter_username) score += 5;
 
-  return { profile: user, score, isQualified: score >= 10, isKOL };
+  return { profile: user, score, isQualified: score >= 15, isKOL };
 }
 
 async function followUser(username: string): Promise<boolean> {
@@ -190,88 +227,105 @@ async function starRepo(repoFullName: string): Promise<boolean> {
 }
 
 async function run() {
-  console.log("⚡ Sovereign Profile Growth & Visibility Engine");
+  console.log("⚡ Sovereign Intelligence & Network Expansion Engine");
   if (!GITHUB_TOKEN) {
-    console.error("❌ Erreur: Token d'authentification manquant.");
-    process.exit(1);
+    console.warn("⚠️ Token d'authentification non configuré. Mode audit simulé.");
+    return;
   }
 
   const { canFollow, canStar, scopes } = await checkTokenCapabilities();
-  console.log(`🔐 Scopes actifs: [${scopes}]`);
+  console.log(`🔐 Scopes actifs: [${scopes || "lecture seule"}]`);
 
   const cache = loadCache();
   if (!cache.leads) cache.leads = {};
 
+  // Check recent follows for mutual follow-back
+  const recentFollows = Object.keys(cache.followedUsers).slice(-15);
+  for (const u of recentFollows) {
+    if (cache.followedUsers[u] && !cache.followedUsers[u].isMutual) {
+      const isMutual = await checkMutual(u);
+      if (isMutual) {
+        cache.followedUsers[u].isMutual = true;
+        if (cache.leads[u]) cache.leads[u].isMutual = true;
+        console.log(`🤝 Mutual Follow Back detected from @${u}!`);
+      }
+    }
+  }
+
+  const candidateUsers = new Set<string>();
+
+  // 1. Direct targeted user search
+  const directUsers = await getDirectUsers();
+  for (const u of directUsers) candidateUsers.add(u);
+
+  // 2. Targeted repos scan & stargazers
   const repos = await getTargetRepositories();
+  for (const repo of repos) {
+    if (repo.owner && repo.owner !== TARGET_USER) candidateUsers.add(repo.owner);
+    const stargazers = await getRecentStargazers(repo.full_name);
+    for (const u of stargazers) candidateUsers.add(u);
+  }
+
   let followCount = 0;
   let starCount = 0;
   let qualifiedCount = 0;
 
-  for (const repo of repos) {
+  for (const username of candidateUsers) {
     if (starCount >= CONFIG.maxStarsPerRun && followCount >= CONFIG.maxFollowsPerRun) break;
+    if (cache.followedUsers[username] || cache.leads[username]) continue;
 
-    const candidateUsers = new Set<string>();
-    if (repo.owner && repo.owner !== TARGET_USER) candidateUsers.add(repo.owner);
+    const { profile, score, isQualified, isKOL } = await evaluateUser(username);
+    if (!isQualified || !profile) continue;
 
-    const stargazers = await getRecentStargazers(repo.full_name);
-    for (const u of stargazers) candidateUsers.add(u);
+    qualifiedCount++;
+    const kolTag = isKOL ? " [KOL]" : "";
+    console.log(`🎯 Lead: @${username}${kolTag} (Score: ${score}) | ${profile.name || username} (${profile.company || profile.location || "N/A"})`);
 
-    for (const username of candidateUsers) {
-      if (cache.followedUsers[username] || cache.leads[username]) continue;
-
-      const { profile, score, isQualified, isKOL } = await evaluateUser(username);
-      if (!isQualified || !profile) continue;
-
-      qualifiedCount++;
-      const kolTag = isKOL ? " [KOL]" : "";
-      console.log(`🎯 Lead: @${username}${kolTag} (Score: ${score}) | ${profile.name || username}`);
-
-      let topRepoStarred: string | undefined = undefined;
-      if (starCount < CONFIG.maxStarsPerRun && canStar) {
-        const topRepo = await getUserTopRepo(username);
-        if (topRepo && !cache.starredRepos[topRepo]) {
-          const starred = await starRepo(topRepo);
-          if (starred) {
-            cache.starredRepos[topRepo] = new Date().toISOString();
-            topRepoStarred = topRepo;
-            starCount++;
-            console.log(`  ⭐ Starred: ${topRepo}`);
-            await randomDelay();
-          }
-        }
-      }
-
-      let followedAt: string | undefined = undefined;
-      if (canFollow && followCount < CONFIG.maxFollowsPerRun) {
-        const followed = await followUser(username);
-        if (followed) {
-          followedAt = new Date().toISOString();
-          cache.followedUsers[username] = { followedAt, score, isMutual: false };
-          followCount++;
-          console.log(`  ✅ Followed: @${username}`);
+    let topRepoStarred: string | undefined = undefined;
+    if (starCount < CONFIG.maxStarsPerRun && canStar) {
+      const topRepo = await getUserTopRepo(username);
+      if (topRepo && !cache.starredRepos[topRepo]) {
+        const starred = await starRepo(topRepo);
+        if (starred) {
+          cache.starredRepos[topRepo] = new Date().toISOString();
+          topRepoStarred = topRepo;
+          starCount++;
+          console.log(`  ⭐ Starred: ${topRepo}`);
           await randomDelay();
         }
       }
-
-      cache.leads[username] = {
-        username,
-        name: profile.name,
-        bio: profile.bio,
-        company: profile.company,
-        location: profile.location,
-        followers: profile.followers,
-        publicRepos: profile.public_repos,
-        score,
-        isKOL,
-        followedAt,
-        source: repo.full_name,
-        topRepoStarred,
-      };
     }
+
+    let followedAt: string | undefined = undefined;
+    if (canFollow && followCount < CONFIG.maxFollowsPerRun) {
+      const followed = await followUser(username);
+      if (followed) {
+        followedAt = new Date().toISOString();
+        cache.followedUsers[username] = { followedAt, score, isMutual: false };
+        followCount++;
+        console.log(`  ✅ Followed: @${username}`);
+        await randomDelay();
+      }
+    }
+
+    cache.leads[username] = {
+      username,
+      name: profile.name,
+      bio: profile.bio,
+      company: profile.company,
+      location: profile.location,
+      followers: profile.followers,
+      publicRepos: profile.public_repos,
+      score,
+      isKOL,
+      followedAt,
+      source: profile.location || "targeted_search",
+      topRepoStarred,
+    };
   }
 
   saveCache(cache);
-  console.log(`\n🏆 Exécution terminée : +${qualifiedCount} leads qualifiés, +${starCount} stars, +${followCount} follows.`);
+  console.log(`\n🏆 Cycle terminé : +${qualifiedCount} leads qualifiés, +${starCount} stars ciblées, +${followCount} follows.`);
 }
 
 run().catch((err) => {
