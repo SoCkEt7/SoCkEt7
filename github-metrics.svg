@@ -6,7 +6,7 @@
       <stop offset="100%" stop-color="#04060a"/>
     </linearGradient>
     <radialGradient id="ambientGlow" cx="20%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.08"/>
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#080b12" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="subtleBorder" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -78,11 +78,11 @@
   <g transform="translate(32, 24)">
     <circle cx="4" cy="4" r="3" fill="#38bdf8" opacity="0.9" class="pulse-indicator"/>
     <circle cx="4" cy="4" r="3" fill="none" stroke="#38bdf8" stroke-width="0.8" class="beacon-ring"/>
-    <text x="16" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#e2e8f0" letter-spacing="0.3">Telemetry engine</text>
-    <text x="135" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#334155">/</text>
-    <text x="148" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#64748b">node <tspan fill="#cbd5e1" font-weight="500">socket7</tspan></text>
-    <text x="235" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#334155">/</text>
-    <text x="248" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#64748b">posture <tspan fill="#38bdf8" font-weight="500">hardened</tspan></text>
+    <text x="16" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#e2e8f0" letter-spacing="0.3">Telemetry engine</text>
+    <text x="135" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#64748b">/</text>
+    <text x="148" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#94a3b8">node <tspan fill="#cbd5e1" font-weight="500">socket7</tspan></text>
+    <text x="235" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#64748b">/</text>
+    <text x="248" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" fill="#94a3b8">posture <tspan fill="#38bdf8" font-weight="500">hardened</tspan></text>
 
     <!-- Top Right Badges (Fine Flat Minimalist) -->
     <g transform="translate(632, -4)">
@@ -95,31 +95,31 @@
   </g>
 
   <!-- Divider -->
-  <line x1="32" y1="44" x2="928" y2="44" stroke="#131b2c" stroke-width="0.8"/>
+  <line x1="32" y1="44" x2="928" y2="44" stroke="#1e3a5f" stroke-width="0.8"/>
 
   <!-- ==================== LEFT COLUMN: ACTIVITY & COMMIT VELOCITY ==================== -->
   <g transform="translate(32, 60)">
     <!-- Column Title -->
-    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Activity &amp; commit velocity</text>
-    <text x="0" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#64748b">5,283 commits (5,149 private anonymized + 134 public)</text>
+    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Activity &amp; Commit Velocity</text>
+    <text x="0" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">5,283 commits (5,149 private anonymized + 134 public)</text>
 
     <!-- Header Stats Pills -->
     <g transform="translate(300, -2)">
       <g transform="translate(0, 0)">
         <rect x="0" y="0" width="90" height="32" rx="3" fill="#080e1a" stroke="#131e33" stroke-width="0.7"/>
-        <text x="8" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#64748b">Max streak</text>
+        <text x="8" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#94a3b8">Max streak</text>
         <text x="8" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10.5" fill="#38bdf8" font-weight="600">22 days</text>
       </g>
 
       <g transform="translate(98, 0)">
         <rect x="0" y="0" width="98" height="32" rx="3" fill="#080e1a" stroke="#131e33" stroke-width="0.7"/>
-        <text x="8" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#64748b">Peak / day</text>
+        <text x="8" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#94a3b8">Peak / day</text>
         <text x="8" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10.5" fill="#7dd3fc" font-weight="600">198 commits</text>
       </g>
     </g>
 
     <!-- Heatmap Month Labels -->
-    <g transform="translate(18, 50)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#64748b">
+    <g transform="translate(18, 50)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#94a3b8">
       <text x="0" y="0">Jan</text>
       <text x="40" y="0">Feb</text>
       <text x="80" y="0">Mar</text>
@@ -135,7 +135,7 @@
     </g>
 
     <!-- Heatmap Day Labels -->
-    <g transform="translate(0, 66)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7" fill="#475569">
+    <g transform="translate(0, 66)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7" fill="#cbd5e1">
       <text x="0" y="8">M</text>
       <text x="0" y="26">W</text>
       <text x="0" y="44">F</text>
@@ -522,54 +522,54 @@
 
     <!-- 12-Month Trajectory Histogram -->
     <g transform="translate(0, 152)">
-      <line x1="10" y1="100" x2="495" y2="100" stroke="#131b2c" stroke-width="0.8"/>
+      <line x1="10" y1="100" x2="495" y2="100" stroke="#1e3a5f" stroke-width="0.8"/>
 
       <g transform="translate(22, 0)">
         <rect x="0" y="86" width="22" height="14" rx="2" fill="#034e6b"/>
-        <text x="11" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">142</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Jan</text>
+        <text x="11" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8" text-anchor="middle">142</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Jan</text>
       </g>
 
       <g transform="translate(62, 0)">
         <rect x="0" y="82" width="22" height="18" rx="2" fill="#034e6b"/>
-        <text x="11" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">185</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Feb</text>
+        <text x="11" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8" text-anchor="middle">185</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Feb</text>
       </g>
 
       <g transform="translate(102, 0)">
         <rect x="0" y="79" width="22" height="21" rx="2" fill="#034e6b"/>
-        <text x="11" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">210</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Mar</text>
+        <text x="11" y="73" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8" text-anchor="middle">210</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Mar</text>
       </g>
 
       <g transform="translate(142, 0)">
         <rect x="0" y="71" width="22" height="29" rx="2" fill="#0284c7"/>
-        <text x="11" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">290</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Apr</text>
+        <text x="11" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8" text-anchor="middle">290</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Apr</text>
       </g>
 
       <g transform="translate(182, 0)">
         <rect x="0" y="69" width="22" height="31" rx="2" fill="#0284c7"/>
-        <text x="11" y="63" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">310</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">May</text>
+        <text x="11" y="63" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8" text-anchor="middle">310</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">May</text>
       </g>
 
       <g transform="translate(222, 0)">
         <rect x="0" y="75" width="22" height="25" rx="2" fill="#0284c7"/>
-        <text x="11" y="69" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b" text-anchor="middle">245</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Jun</text>
+        <text x="11" y="69" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8" text-anchor="middle">245</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Jun</text>
       </g>
 
       <g transform="translate(262, 0)">
         <rect x="0" y="58" width="22" height="42" rx="2" fill="#0284c7"/>
         <text x="11" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#38bdf8" text-anchor="middle">420</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Jul</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Jul</text>
       </g>
 
       <g transform="translate(302, 0)">
         <rect x="0" y="32" width="22" height="68" rx="2" fill="#0284c7"/>
         <text x="11" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#38bdf8" text-anchor="middle">680</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Aug</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Aug</text>
       </g>
 
       <g class="peak-bar" transform="translate(342, 0)">
@@ -581,24 +581,24 @@
       <g transform="translate(382, 0)">
         <rect x="0" y="20" width="22" height="80" rx="2" fill="#0284c7"/>
         <text x="11" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#38bdf8" text-anchor="middle">980</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Oct</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Oct</text>
       </g>
 
       <g transform="translate(422, 0)">
         <rect x="0" y="44" width="22" height="56" rx="2" fill="#0284c7"/>
         <text x="11" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#38bdf8" text-anchor="middle">560</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Nov</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Nov</text>
       </g>
 
       <g transform="translate(462, 0)">
         <rect x="0" y="36" width="22" height="64" rx="2" fill="#0284c7"/>
         <text x="11" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#38bdf8" text-anchor="middle">641</text>
-        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#475569" text-anchor="middle">Dec</text>
+        <text x="11" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8" fill="#cbd5e1" text-anchor="middle">Dec</text>
       </g>
     </g>
 
     <!-- Legend Footer -->
-    <g transform="translate(0, 305)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8.5" fill="#64748b">
+    <g transform="translate(0, 305)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="8.5" fill="#94a3b8">
       <text x="0" y="8">Daily velocity: ~14.5 commits/day</text>
       <g transform="translate(350, 0)">
         <text x="0" y="8">Less</text>
@@ -613,13 +613,13 @@
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="560" y1="60" x2="560" y2="445" stroke="#131b2c" stroke-width="0.8"/>
+  <line x1="560" y1="60" x2="560" y2="445" stroke="#1e3a5f" stroke-width="0.8"/>
 
   <!-- ==================== RIGHT COLUMN: ARSENAL & ENCLAVES ==================== -->
   <g transform="translate(585, 60)">
     <!-- Column Title -->
-    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Arsenal &amp; research matrix</text>
-    <text x="0" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#64748b">Classified repositories sanitized via GraphQL</text>
+    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff">Arsenal &amp; Core Tech Stack</text>
+    <text x="0" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9.5" fill="#94a3b8">Classified repositories sanitized via GraphQL</text>
 
     <!-- Language Progress Bars -->
     <g transform="translate(0, 46)">
@@ -627,40 +627,40 @@
       <g>
         <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#f1f5f9">Rust (Ratatui, Livediff flagship 230★)</text>
         <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="end">35%</text>
-        <rect x="0" y="16" width="340" height="3.5" rx="1.5" fill="#0b101c"/>
-        <rect x="0" y="16" width="119" height="3.5" rx="1.5" fill="#38bdf8"/>
+        <rect x="0" y="16" width="340" height="5" rx="1.5" fill="#0b101c"/>
+        <rect x="0" y="16" width="119" height="5" rx="1.5" fill="#38bdf8"/>
       </g>
 
       <!-- TypeScript -->
       <g transform="translate(0, 26)">
         <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="400" fill="#cbd5e1">TypeScript / JS (Linda Agent, ASCILINE)</text>
         <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#7dd3fc" text-anchor="end">28%</text>
-        <rect x="0" y="16" width="340" height="3.5" rx="1.5" fill="#0b101c"/>
-        <rect x="0" y="16" width="95" height="3.5" rx="1.5" fill="#7dd3fc"/>
+        <rect x="0" y="16" width="340" height="5" rx="1.5" fill="#0b101c"/>
+        <rect x="0" y="16" width="95" height="5" rx="1.5" fill="#7dd3fc"/>
       </g>
 
       <!-- Python -->
       <g transform="translate(0, 52)">
         <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="400" fill="#cbd5e1">Python (OWASP MCP, RAG, AI Defense)</text>
         <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="end">18%</text>
-        <rect x="0" y="16" width="340" height="3.5" rx="1.5" fill="#0b101c"/>
-        <rect x="0" y="16" width="61" height="3.5" rx="1.5" fill="#64748b"/>
+        <rect x="0" y="16" width="340" height="5" rx="1.5" fill="#0b101c"/>
+        <rect x="0" y="16" width="61" height="5" rx="1.5" fill="#94a3b8"/>
       </g>
 
       <!-- C / C++ -->
       <g transform="translate(0, 78)">
         <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="400" fill="#cbd5e1">C / C++ (Hydra kernel, low-level binaries)</text>
         <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="end">12%</text>
-        <rect x="0" y="16" width="340" height="3.5" rx="1.5" fill="#0b101c"/>
-        <rect x="0" y="16" width="41" height="3.5" rx="1.5" fill="#64748b"/>
+        <rect x="0" y="16" width="340" height="5" rx="1.5" fill="#0b101c"/>
+        <rect x="0" y="16" width="41" height="5" rx="1.5" fill="#94a3b8"/>
       </g>
 
       <!-- Shell -->
       <g transform="translate(0, 104)">
         <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="400" fill="#94a3b8">Shell &amp; Zero-Trust Linux Hardening</text>
-        <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#64748b" text-anchor="end">7%</text>
-        <rect x="0" y="16" width="340" height="3.5" rx="1.5" fill="#0b101c"/>
-        <rect x="0" y="16" width="24" height="3.5" rx="1.5" fill="#334155"/>
+        <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="end">7%</text>
+        <rect x="0" y="16" width="340" height="5" rx="1.5" fill="#0b101c"/>
+        <rect x="0" y="16" width="24" height="5" rx="1.5" fill="#64748b"/>
       </g>
     </g>
 
@@ -688,36 +688,36 @@
     <g transform="translate(0, 276)">
       <!-- Tile 1 -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#131b2c" stroke-width="0.7"/>
-        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b">Flagship stars</text>
-        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" font-weight="600" fill="#38bdf8">★ 230+ (Livediff)</text>
+        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#1e3a5f" stroke-width="0.7"/>
+        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8">Flagship stars</text>
+        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">★ 230+ (Livediff)</text>
       </g>
 
       <!-- Tile 2 -->
       <g transform="translate(178, 0)">
-        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#131b2c" stroke-width="0.7"/>
-        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b">Private repositories</text>
-        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" font-weight="600" fill="#f8fafc">110+ sanitized</text>
+        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#1e3a5f" stroke-width="0.7"/>
+        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8">Private repositories</text>
+        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">110+ sanitized</text>
       </g>
 
       <!-- Tile 3 -->
       <g transform="translate(0, 48)">
-        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#131b2c" stroke-width="0.7"/>
-        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b">Lifetime commits</text>
-        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11" font-weight="600" fill="#7dd3fc">5,713+ verified</text>
+        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#1e3a5f" stroke-width="0.7"/>
+        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8">Lifetime commits</text>
+        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="700" fill="#7dd3fc">5,713+ verified</text>
       </g>
 
       <!-- Tile 4 -->
       <g transform="translate(178, 48)">
-        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#131b2c" stroke-width="0.7"/>
-        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#64748b">Security protocol</text>
+        <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#1e3a5f" stroke-width="0.7"/>
+        <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8">Security protocol</text>
         <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8">Zero-leak / Nyx</text>
       </g>
     </g>
   </g>
 
   <!-- Bottom Line -->
-  <g transform="translate(32, 464)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#475569">
+  <g transform="translate(32, 464)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#cbd5e1">
     <text x="0" y="0">Sovereign telemetry engine · live stream active · cryptographically verified</text>
     <text x="896" y="0" fill="#38bdf8" font-weight="500" text-anchor="end">All systems operational</text>
   </g>

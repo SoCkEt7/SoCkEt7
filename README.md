@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="github-metrics.svg?v=20260907-en-pure" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
+  <img src="github-metrics.svg?v=20260907-hd-v2" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
 </p>
 
 ### Featured Flagship: [Livediff (230★)](https://github.com/SoCkEt7/Livediff)
