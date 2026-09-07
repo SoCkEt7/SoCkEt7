@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/SoCkEt7">
-    <img src="hero-banner.svg?v=20260907-8" width="100%" alt="Antonin Nivoche / SoCkEt7 - Sovereign Identity" />
+    <img src="hero-banner.svg?v=20260907-en-pure" width="100%" alt="Antonin Nivoche / SoCkEt7 - Sovereign Identity" />
   </a>
 </p>
 
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="github-metrics.svg?v=20260907-8" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
+  <img src="github-metrics.svg?v=20260907-en-pure" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
 </p>
 
 ### Featured Flagship: [Livediff (230★)](https://github.com/SoCkEt7/Livediff)
@@ -46,7 +46,7 @@ If you use **[Livediff](https://github.com/SoCkEt7/Livediff)** or benefit from m
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/antoninnvh">
-    <img src="buymeacoffee-card.svg?v=20260907-8" width="100%" alt="Buy Me a Coffee Patronage Dashboard - Antonin Nivoche" />
+    <img src="buymeacoffee-card.svg?v=20260907-en-pure" width="100%" alt="Buy Me a Coffee Patronage Dashboard - Antonin Nivoche" />
   </a>
 </p>
 
