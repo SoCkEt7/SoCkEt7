@@ -1,5 +1,6 @@
 # Local internal guides & marketing instructions
 .internal/
+sovereign-engine-v2/
 sponsoring/
 SPONSORING.md
 *.local.md
@@ -8,9 +9,12 @@ SPONSORING.md
 
 # Local cache, CRM & temporary data
 .cache/
+vault/
+leads/
 data/
 LEADS.md
 *.log
 .DS_Store
 __pycache__/
 *.pyc
+
