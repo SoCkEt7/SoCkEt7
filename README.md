@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/antonin-nvh/"><img src="https://img.shields.io/badge/LinkedIn-antonin--nvh-0a66c2?style=flat-square&logo=linkedin&logoColor=white&labelColor=060911" height="22" alt="LinkedIn" /></a>
-  <a href="https://www.buymeacoffee.com/antoninnvh"><img src="https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black&labelColor=060911" height="22" alt="Buy Me A Coffee" /></a>
   <a href="mailto:antonin.nvh@gmail.com"><img src="https://img.shields.io/badge/Direct_Channel-SLA_%3C24h-38bdf8?style=flat-square&logo=gmail&logoColor=white&labelColor=060911" height="22" alt="Direct Inquiry" /></a>
   <a href="https://nyxia.fr"><img src="https://img.shields.io/badge/Security-Nyxia.fr-7dd3fc?style=flat-square&logo=shield&logoColor=black&labelColor=060911" height="22" alt="Nyxia Advisory" /></a>
   <a href="https://github.com/SoCkEt7?tab=followers"><img src="https://komarev.com/ghpvc/?username=SoCkEt7&label=Profile%20Views&color=38bdf8&style=flat-square" height="22" alt="Profile Views" /></a>
@@ -35,7 +34,6 @@ cargo install livediff
   <a href="https://socket7.github.io/Livediff/"><img src="https://img.shields.io/badge/Web_Showcase-Live_Simulator-7dd3fc?style=flat-square&logo=google-chrome&logoColor=black&labelColor=070a12" height="20" alt="Live Demo" /></a>
   <a href="https://github.com/rust-unofficial/awesome-rust"><img src="https://img.shields.io/badge/Curated-Awesome--Rust-38bdf8?style=flat-square&logo=rust&logoColor=white&labelColor=070a12" height="20" alt="Awesome-Rust" /></a>
   <a href="https://github.com/ratatui-org/awesome-ratatui"><img src="https://img.shields.io/badge/Featured-Awesome--Ratatui-0284c7?style=flat-square&logo=terminal&logoColor=white&labelColor=070a12" height="20" alt="Awesome-Ratatui" /></a>
-  <a href="https://www.buymeacoffee.com/antoninnvh"><img src="https://img.shields.io/badge/Support_Livediff-Buy%20Me%20a%20Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black&labelColor=070a12" height="20" alt="Buy Me A Coffee" /></a>
 </p>
 
 ---
@@ -144,7 +142,6 @@ If you use **[Livediff](https://github.com/SoCkEt7/Livediff)** or benefit from m
   <a href="https://www.linkedin.com/in/antonin-nvh/"><img src="https://img.shields.io/badge/LinkedIn-antonin--nvh-0a66c2?style=flat-square&logo=linkedin&logoColor=white&labelColor=060911" height="22" alt="LinkedIn" /></a>
   <a href="mailto:antonin.nvh@gmail.com"><img src="https://img.shields.io/badge/Direct_Channel-SLA_%3C24h-38bdf8?style=flat-square&logo=gmail&logoColor=white&labelColor=060911" height="22" alt="Email" /></a>
   <a href="https://nyxia.fr"><img src="https://img.shields.io/badge/Nyxia.fr-Request_Audit-7dd3fc?style=flat-square&logo=shield&logoColor=black&labelColor=060911" height="22" alt="Nyxia" /></a>
-  <a href="https://www.buymeacoffee.com/antoninnvh"><img src="https://img.shields.io/badge/Support_Livediff-Buy%20Me%20a%20Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black&labelColor=060911" height="22" alt="Buy Me A Coffee" /></a>
 </p>
 
 <br>
