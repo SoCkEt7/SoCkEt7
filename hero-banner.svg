@@ -5,12 +5,16 @@
       <stop offset="45%" stop-color="#0284c7" stop-opacity="0.09"/>
       <stop offset="100%" stop-color="#060911" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="fineLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.2"/>
-      <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.5"/>
-      <stop offset="70%" stop-color="#6d28d9" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.2"/>
+    <linearGradient id="panelBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#818cf8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.8"/>
     </linearGradient>
+
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
 
     <!-- ORIGINAL HYDRA MONOLITH GRADIENTS -->
     <linearGradient id="g-top" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -59,10 +63,10 @@
     </style>
   </defs>
 
-  <!-- Clean dark base -->
-  <rect width="960" height="250" rx="8" fill="#070a12"/>
-  <rect width="960" height="250" rx="8" fill="url(#subtleGlow)"/>
-  <rect x="0.5" y="0.5" width="959" height="249" rx="7.5" fill="none" stroke="#172033" stroke-width="1"/>
+  <!-- Clean dark base with crisp contour & luxury shadow for both light/dark backgrounds -->
+  <rect x="1" y="1" width="958" height="248" rx="8" fill="#070a12" filter="url(#cardShadow)"/>
+  <rect x="1" y="1" width="958" height="248" rx="8" fill="url(#subtleGlow)"/>
+  <rect x="0.5" y="0.5" width="959" height="249" rx="8" fill="none" stroke="url(#panelBorder)" stroke-width="1.2"/>
 
   <!-- Top Metadata Bar -->
   <g transform="translate(36, 26)" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-size="11" fill="#64748b">
@@ -170,5 +174,5 @@
   </g>
 
   <!-- Fine bottom laser line -->
-  <rect x="0" y="249" width="960" height="1" fill="url(#fineLine)"/>
+  <rect x="2" y="247" width="956" height="1" fill="url(#panelBorder)" opacity="0.6"/>
 </svg>
