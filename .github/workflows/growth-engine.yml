@@ -1,4 +1,4 @@
-name: "Profile Visibility & Growth Automation"
+name: "Core Telemetry Sync & Runtime Health"
 
 on:
   schedule:

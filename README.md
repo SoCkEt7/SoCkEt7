@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/SoCkEt7">
-    <img src="hero-banner.svg?v=20260907-en-pure" width="100%" alt="Antonin Nivoche / SoCkEt7 - Sovereign Identity" />
+    <img src="hero-banner.svg?v=20260907-2015-en-fixed" width="100%" alt="Antonin Nivoche / SoCkEt7 - Sovereign Identity" />
   </a>
 </p>
 
