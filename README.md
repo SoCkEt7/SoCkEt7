@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/SoCkEt7">
-    <img src="hero-banner.svg?v=20260907-5" width="100%" alt="Antonin Nivoche / SoCkEt7 - Sovereign Identity" />
+    <img src="hero-banner.svg?v=20260907-8" width="100%" alt="Antonin Nivoche / SoCkEt7 - Sovereign Identity" />
   </a>
 </p>
 
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="github-metrics.svg?v=20260907-5" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
+  <img src="github-metrics.svg?v=20260907-8" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
 </p>
 
 ### Featured Flagship: [Livediff (230★)](https://github.com/SoCkEt7/Livediff)
@@ -46,7 +46,7 @@ If you use **[Livediff](https://github.com/SoCkEt7/Livediff)** or benefit from m
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/antoninnvh">
-    <img src="buymeacoffee-card.svg?v=20260907-7" width="100%" alt="Buy Me a Coffee Patronage Dashboard - Antonin Nivoche" />
+    <img src="buymeacoffee-card.svg?v=20260907-8" width="100%" alt="Buy Me a Coffee Patronage Dashboard - Antonin Nivoche" />
   </a>
 </p>
 
@@ -65,13 +65,13 @@ If you use **[Livediff](https://github.com/SoCkEt7/Livediff)** or benefit from m
   "architect": {
     "name": "Antonin Nivoche",
     "handle": "SoCkEt7",
-    "designation": "Cybersécurité des Environnements Critiques · R&D Défenses IA · Ex-CTO (18+ ans)",
+    "designation": "Critical Infrastructure Cybersecurity · Adversarial AI Defense · Ex-CTO (18+ yrs)",
     "track_record": "18+ Years Technical R&D, Offensive Security & Sovereign Systems",
-    "education": "Sorbonne Université (Paris, France)",
+    "education": "Sorbonne University (Paris, France)",
     "advisory_capacity": "Fractional CTO · Board Technical Governance · Offensive AI Red Team Lead"
   },
   "engagement_matrix": {
-    "client_scope": ["Grands Comptes", "ETI", "OIV", "Critical Infrastructure", "Regulated FinTech & AI Scaleups"],
+    "client_scope": ["Enterprise & Fortune 500", "Critical Infrastructure (OIV/NIS2)", "Regulated FinTech & AI Scaleups"],
     "compliance_alignment": ["NIS2 (EU 2025)", "OWASP MCP Security (2025/2026)", "EU AI Act", "SOC 2 Type II", "ISO 27001", "PTES / OSSTMM"],
     "response_sla": "< 24 Hours via Direct Executive Channel",
     "rules_of_engagement": "Strict NDA · Non-Destructive Testing · Full CVSS Findings & SIEM Export"
@@ -107,7 +107,7 @@ If you use **[Livediff](https://github.com/SoCkEt7/Livediff)** or benefit from m
 | :--- | :--- | :--- | :--- |
 | **2026 – Present** | **[Nyxia](https://nyxia.fr)** | Founder & Lead Architect | Next-gen offensive security platform. AI defenses, physical intrusion audits & automated vulnerability research. |
 | **2025 – Present** | **Olive.click / Freelance** | Fractional CTO & AI Consultant | Production RAG architectures, ethical hacking, autonomous agent orchestration and high-scale fullstack systems. |
-| **2023 – 2024** | **Sorbonne Université** | Ingénieur Développement | R&D and core software development within academic and high-reliability systems environments. |
+| **2023 – 2024** | **Sorbonne University** | Lead Software Engineer | R&D and core software development within academic and high-reliability systems environments. |
 | **2017 – 2022** | **CodeQuantum.io** | CEO & Technical Founder | Scaled software engineering consultancy, cloud-native deployments, and mission-critical client architectures. |
 
 ---
