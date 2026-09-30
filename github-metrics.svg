@@ -625,7 +625,7 @@
     <g transform="translate(0, 46)">
       <!-- Rust -->
       <g>
-        <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#f1f5f9">Rust (Ratatui, Livediff flagship 230★)</text>
+        <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#f1f5f9">Rust (Ratatui, Livediff flagship 233★)</text>
         <text x="340" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="end">35%</text>
         <rect x="0" y="16" width="340" height="5" rx="1.5" fill="#0b101c"/>
         <rect x="0" y="16" width="119" height="5" rx="1.5" fill="#38bdf8"/>
@@ -690,7 +690,7 @@
       <g transform="translate(0, 0)">
         <rect x="0" y="0" width="162" height="42" rx="3" fill="#070b14" stroke="#1e3a5f" stroke-width="0.7"/>
         <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="7.5" fill="#94a3b8">Flagship stars</text>
-        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">★ 230+ (Livediff)</text>
+        <text x="10" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="700" fill="#38bdf8">★ 233+ (Livediff)</text>
       </g>
 
       <!-- Tile 2 -->

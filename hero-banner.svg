@@ -161,7 +161,7 @@
 
     <g transform="translate(122, 24)">
       <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" font-weight="500" fill="#64748b">Flagship tool</text>
-      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="24" font-weight="600" fill="#38bdf8">230★</text>
+      <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="24" font-weight="600" fill="#38bdf8">233★</text>
       <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="10" fill="#94a3b8">Livediff (Rust)</text>
     </g>
 

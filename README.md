@@ -10,16 +10,16 @@
   <a href="https://nyxia.fr"><img src="https://img.shields.io/badge/Security-Nyxia.fr-7dd3fc?style=flat-square&logo=shield&logoColor=black&labelColor=060911" height="22" alt="Nyxia Advisory" /></a>
   <a href="https://www.buymeacoffee.com/antoninnvh"><img src="https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black&labelColor=060911" height="22" alt="Buy Me A Coffee" /></a>
   <a href="https://github.com/SoCkEt7?tab=followers"><img src="https://komarev.com/ghpvc/?username=SoCkEt7&label=Profile%20Views&color=38bdf8&style=flat-square" height="22" alt="Profile Views" /></a>
-  <a href="https://github.com/SoCkEt7/Livediff"><img src="https://img.shields.io/badge/Star-Livediff%20(230★)-0284c7?style=flat-square&logo=rust&logoColor=white&labelColor=060911" height="22" alt="Star Livediff" /></a>
+  <a href="https://github.com/SoCkEt7/Livediff"><img src="https://img.shields.io/badge/Star-Livediff%20(233%E2%98%85)-0284c7?style=flat-square&logo=rust&logoColor=white&labelColor=060911" height="22" alt="Star Livediff" /></a>
 </p>
 
 <p align="center">
-  <img src="github-metrics.svg?v=20260907-hd-v2" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
+  <img src="github-metrics.svg?v=20260930-livediff-233" alt="Antonin Nivoche - Sovereign Cyber Telemetry Dashboard" width="100%" />
 </p>
 
-### Featured Flagship: [Livediff (230★)](https://github.com/SoCkEt7/Livediff)
+### Featured Flagship: [Livediff (233★ · 2 forks)](https://github.com/SoCkEt7/Livediff)
 
-> **Live terminal diffs while files change.** High-performance Rust TUI built with Ratatui & Tokio to eliminate feedback latency during AI codegen, AST refactorings, migrations, and batch file rewriting.
+> 👁️ Real-time file monitoring with beautiful live diff visualization in the terminal. Built in Rust 🦀
 
 ```bash
 # Homebrew (macOS / Linux)
@@ -30,7 +30,8 @@ cargo install livediff
 ```
 
 <p align="left">
-  <a href="https://github.com/SoCkEt7/Livediff"><img src="https://img.shields.io/badge/GitHub-Repo%20(230★)-38bdf8?style=flat-square&logo=github&logoColor=white&labelColor=070a12" height="20" alt="Repo" /></a>
+  <a href="https://github.com/SoCkEt7/Livediff"><img src="https://img.shields.io/badge/GitHub-233%20stars%20%C2%B7%202%20forks-38bdf8?style=flat-square&logo=github&logoColor=white&labelColor=070a12" height="20" alt="Livediff: 233 stars and 2 forks" /></a>
+  <a href="https://github.com/SoCkEt7/Livediff/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0-0284c7?style=flat-square&logo=apache&logoColor=white&labelColor=070a12" height="20" alt="Apache License 2.0" /></a>
   <a href="https://crates.io/crates/livediff"><img src="https://img.shields.io/crates/v/livediff.svg?style=flat-square&color=0284c7&labelColor=070a12" height="20" alt="Crates.io v3.3.0" /></a>
   <a href="https://socket7.github.io/Livediff/"><img src="https://img.shields.io/badge/Web_Showcase-Live_Simulator-7dd3fc?style=flat-square&logo=google-chrome&logoColor=black&labelColor=070a12" height="20" alt="Live Demo" /></a>
   <a href="https://github.com/rust-unofficial/awesome-rust"><img src="https://img.shields.io/badge/Curated-Awesome--Rust-38bdf8?style=flat-square&logo=rust&logoColor=white&labelColor=070a12" height="20" alt="Awesome-Rust" /></a>
@@ -115,7 +116,7 @@ If my open-source work (like **[Livediff](https://github.com/SoCkEt7/Livediff)**
 
 | Domain | Engine / Lab | Stack | Architecture & Scope |
 | :--- | :--- | :--- | :--- |
-| **Developer Productivity** | **[Livediff](https://github.com/SoCkEt7/Livediff)** | `Rust` `Ratatui` | Real-time terminal diffing engine for instant feedback loops during AI codegen. *(230★)* |
+| **Developer Productivity** | **[Livediff](https://github.com/SoCkEt7/Livediff)** | `Rust` `Ratatui` | Real-time terminal diffing engine for instant feedback loops during AI codegen. *(233★)* |
 | **AI Agent Security** | **Helios / MCP Defense** | `Python` `OWASP` | Defense layer against MCP tool poisoning, token passthrough & unauthorized agent tool calls. |
 | **High-Throughput Streaming** | **[ASCILINE](https://github.com/SoCkEt7/ASCILINE_Sandbox)** | `TypeScript` `WebSockets` | Real-time binary-encoded ASCII canvas rendering engine with ultra-low latency. |
 | **Autonomous Intelligence** | **Linda Intelligence Agent** | `TypeScript` `AI` | Social agent with automated 0-day intelligence, tech discovery & market signals. |
