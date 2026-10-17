@@ -1,0 +1,47 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Brain circuit design with cyan color - HD version -->
+  <defs>
+    <style>
+      .brain-circuit { fill: none; stroke: #00d4ff; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .brain-fill { fill: #00d4ff; opacity: 0.8; }
+      .circuit-dot { fill: #00d4ff; }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 1; }
+      }
+
+      .brain-fill {
+        animation: pulse 2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Brain outline -->
+  <path class="brain-circuit" d="M 32 48 Q 24 56 24 72 Q 24 96 48 104 Q 64 108 64 108 Q 80 108 104 104 Q 104 96 104 72 Q 104 56 96 48" />
+
+  <!-- Left lobe circuits -->
+  <circle class="circuit-dot" cx="40" cy="56" r="6" />
+  <path class="brain-circuit" d="M 40 56 L 48 48 L 56 52" />
+
+  <!-- Center core -->
+  <circle class="brain-fill" cx="64" cy="64" r="12" />
+  <circle class="circuit-dot" cx="64" cy="64" r="4" />
+
+  <!-- Right lobe circuits -->
+  <circle class="circuit-dot" cx="88" cy="56" r="6" />
+  <path class="brain-circuit" d="M 88 56 L 80 48 L 72 52" />
+
+  <!-- Bottom connections -->
+  <path class="brain-circuit" d="M 48 80 L 52 88 M 80 80 L 76 88" />
+  <circle class="circuit-dot" cx="52" cy="88" r="4" />
+  <circle class="circuit-dot" cx="76" cy="88" r="4" />
+
+  <!-- Synaptic connections -->
+  <path class="brain-circuit" d="M 40 64 Q 48 60 56 64 M 88 64 Q 80 60 72 64" />
+
+  <!-- Additional detail circuits -->
+  <circle class="circuit-dot" cx="32" cy="68" r="3" />
+  <circle class="circuit-dot" cx="96" cy="68" r="3" />
+  <path class="brain-circuit" d="M 32 68 L 40 64 M 96 68 L 88 64" />
+</svg>
